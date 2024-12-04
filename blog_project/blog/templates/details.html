@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+       <h1 class="mt-4 mb-3">{{details.title}}</h1>
+         <ol class="breadcrumb">
+           <li class="breadcrumb-item active">Post Detail</li>
+         </ol>
+    </div>
+</div>
+ <div class="row">
+   <!-- Post Content Column -->
+   <div class="col-lg-8 mx-auto">
+     <!-- Preview Image -->
+     <img class="img-fluid rounded" src="{{details.thumb.url}}" alt="">
+     <hr>
+     <p>Posted on {{details.date}}</p>
+     <hr>
+     <p class="lead">{{details.body}}</p>
+     </div>
+  </div>
+  {% endblock content %}

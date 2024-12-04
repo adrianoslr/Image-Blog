@@ -1,0 +1,4 @@
+Para startar o docer utilize o comando:
+
+
+docker-compose -f docker-compose.yaml up -d

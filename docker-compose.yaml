@@ -1,0 +1,15 @@
+version: "3.3"  
+services:   
+  database:     
+    container_name: BLOG     
+    image: postgres:latest     
+    restart: always     
+    volumes:       
+      - ./.pgdata:/var/lib/postgresql/data     
+    environment:       
+      - LC_ALL=C.UTF-8       
+      - POSTGRES_USER=ADMIN       
+      - POSTGRES_PASSWORD=ADMIN123       
+      - POSTGRES_DB=BLOG    
+    ports:       
+      - 5432:5432
